@@ -13,11 +13,13 @@ html {
 
 /* Base styles */
 body {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.8rem;
+    /* 18px */
     font-weight: 400;
     line-height: 1.4;
     color: #f0f0f0;
-    min-width: 20em;
+    /* min-width: 20em; */
+    min-width: 76rem
 }
 
 ul {
@@ -73,11 +75,35 @@ img {
     color: #000000;
     background: #808dad;
     border-radius: 5px;
-    transition: background 0.5s ease-out;
+    transition: background 0.2s ease-out;
+}
+
+
+@media (max-width: 900px) {
+    .nav img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav img {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Welcome section */
-.welcome-section{
+.welcome-section {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -87,15 +113,15 @@ img {
 }
 
 /* social-media */
-.welcome-section .div-social-media{
-    width: 12%;
+.welcome-section .div-social-media {
+    width: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.welcome-section .div-social-media a{
+.welcome-section .div-social-media a {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -103,15 +129,16 @@ img {
     align-items: center;
 }
 
-.welcome-section .div-social-media a:hover{
-    width: 90%;
-    border-radius: 50px ;
+.welcome-section .div-social-media a:hover {
+    width: fit-content;
+    padding-right: 1rem;
+    border-radius: 50px;
     border: 1px solid beige;
     justify-content: left;
     transition: all 0.4s ease-in-out;
 }
 
-.welcome-section .div-social-media a i{
+.welcome-section .div-social-media a i {
     border-radius: 50%;
     font-size: 2rem;
     color: #0e1630;
@@ -119,7 +146,7 @@ img {
     padding: 1rem;
 }
 
-.welcome-section .div-social-media a span{
+.welcome-section .div-social-media a span {
     font-size: 1.3rem;
     font-weight: 600;
     color: #808dad;
@@ -131,9 +158,15 @@ img {
     display: inline;
 }
 
+@media(max-width: 1000px) {
+    .welcome-section .div-social-media {
+        margin: auto 3%;
+    }
+}
+
 /* text */
-.welcome-section .div-text{
-    width:53%;
+.welcome-section .div-text {
+    width: 56%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,18 +174,18 @@ img {
 }
 
 .welcome-section .div-text .heading h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
 .welcome-section .div-text .heading h1 span {
-    font-size: 4.2rem;
+    font-size: 3.5rem;
 }
 
-.welcome-section .div-text .heading .hi_text{
+.welcome-section .div-text .heading .hi_text {
     color: #fbff00;
 }
 
@@ -169,9 +202,9 @@ img {
     overflow: hidden;
     border-right: 3px solid #1de2d1;
     animation:
-        typing 10s steps(23) infinite ;
-    margin: auto;
-} 
+        typing 10s steps(23) infinite;
+    margin: 0 auto;
+}
 
 @keyframes typing {
     0% {
@@ -181,23 +214,24 @@ img {
     50% {
         width: 22ch;
     }
-    100%{
+
+    100% {
         width: 0;
     }
 }
 
-.welcome-section .div-text .paragraph{
+.welcome-section .div-text .paragraph {
     width: 95%;
-    margin: 2.5rem auto;
+    margin: 1rem auto;
     color: #808dad;
 }
 
-.welcome-section .div-text .download-cv{
+.welcome-section .div-text .download-cv {
     margin-top: 2rem;
 }
 
-.welcome-section .div-photo{
-    width: 35%;
+.welcome-section .div-photo {
+    width: 29%;
     padding: 5%;
 }
 
@@ -206,15 +240,29 @@ img {
     box-shadow: 0px 0px 10px 6px rgb(42 133 70 / 50%);
 }
 
+@media (max-width: 970px) {
+
+    .welcome-section .div-text .heading h1 span,
+    .welcome-section .div-text .heading .typing-text {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+}
+
 /* Projects section */
 .projects-section {
+    width: 100%;
+    /* height: 100vh; */
     text-align: center;
-    padding: 7rem 2rem 1rem 2rem;
+    padding: 8rem 2rem 1rem 2rem;
 }
 
 .projects-section>h2 {
-    max-width: 640px;
-    margin: 0 auto 6rem auto;
+    max-width: 50%;
+    margin: 0 auto 4rem auto;
     border-bottom: 0.2rem solid #f0f0f0;
     font-size: 3rem;
 }
@@ -229,11 +277,24 @@ img {
     margin-bottom: 6rem;
 }
 
+@media (max-width: 500px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        width: 80%;
+    }
+}
+
 .project {
     background-color: #303841;
     box-shadow: 0px 0px 7px 1px #4d9f72c7;
     border-radius: 5px;
-    height: 75vh;
+    height: 75vmin;
+}
+
+@media (max-width: 500px) {
+    .project {
+        height: 100vh;
+    } 
 }
 
 .code {
@@ -273,17 +334,33 @@ img {
 }
 
 .btn {
+    opacity: 80%;
     font-size: 2rem;
     background: #000000;
-    box-shadow: 0 2px 10px rgba(240, 240, 240, 0.5);
+    color: #a3a9b9;
+    animation: button-animation 2s infinite;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-    box-shadow: 0 2px 12px rgba(143, 5, 235, 0.8);
-    color: #000000;
-    background: #808dad;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
+    opacity: 100%;
+    color: #f0f0f0;
+    animation: button-animation 4s infinite;
+}
+
+@keyframes button-animation {
+    0% {
+        box-shadow: 1px -1px 10px 0px rgb(193 3 249 / 97%), -1px 1px 10px 0px rgba(0, 247, 53, 0.92);
+    }
+
+    50% {
+        box-shadow: 1px -1px 15px 1px rgb(193 3 249 / 97%), -1px 1px 15px 1px rgba(0, 247, 53, 0.92);
+    }
+
+    100% {
+        box-shadow: 1px -1px 10px 0px rgb(193 3 249 / 97%), -1px 1px 10px 0px rgba(0, 247, 53, 0.92);
+    }
 }
 
 .btn>i {

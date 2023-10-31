@@ -87,7 +87,7 @@ img {
 
 @media (max-width: 650px) {
     .nav img {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -153,27 +153,21 @@ img {
     display: none;
     margin-left: 5px;
 }
-
-@media(min-width: 1170px) {
-
-    .welcome-section .div-social-media a:hover {
-        width: 80%;
-        padding-right: 1rem;
-        border-radius: 50px;
-        border: 1px solid beige;
-        justify-content: left;
-        transition: all 0.4s ease-in-out;
-    }
-
-    .welcome-section .div-social-media a:hover span {
-        display: inline;
-    }
+.welcome-section .div-social-media a:hover {
+    width: fit-content;
+    padding-right: 1rem;
+    border-radius: 50px;
+    border: 1px solid beige;
+    justify-content: left;
+    transition: all 0.2s ease-out;
 }
 
-@media(max-width: 1000px) {
-    .welcome-section .div-social-media {
-        margin: auto;
-    }
+.welcome-section .div-social-media a:hover i{
+    color: #a71313 ;
+}
+
+.welcome-section .div-social-media a:hover span {
+    display: inline;
 }
 
 /* text */
@@ -263,6 +257,50 @@ img {
     .btn {
         font-size: 1.5rem;
     }
+}
+
+@media(max-width: 950px) and (min-width: 700px) {
+    .welcome-section .div-social-media a {
+        transform: rotate(315deg);
+    }
+}
+
+@media(max-width: 700px) {
+    .welcome-section {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        position: relative;
+        top: 8rem;
+        /* margin-bottom: 5rem; */
+    }
+
+    .welcome-section .div-photo {
+        padding: 2%;
+        margin-bottom: -5rem;
+    }
+
+    .welcome-section .div-text .heading h1 span,
+    .welcome-section .div-text .heading .typing-text {
+        font-size: 3.5rem;
+    }
+
+
+    .welcome-section .div-text {
+        width: 80%;
+    }
+
+    .welcome-section .div-text .paragraph {
+        text-align: center;
+    }
+
+    .welcome-section .div-social-media {
+        flex-direction: row;
+    }
+
+    .welcome-section .div-social-media a {
+        margin-left: 1rem;
+    }
+
 }
 
 /* Projects section */
@@ -419,7 +457,8 @@ img {
 
 .contact-details:hover {
     transform: translateY(8px);
-    color: rgb(255, 60, 0);
+    color: rgb(6, 187, 45);
+    text-shadow: 2px -2px 1px #a30b0b;
 }
 
 /* Footer */

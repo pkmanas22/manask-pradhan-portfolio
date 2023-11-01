@@ -303,6 +303,21 @@ img {
 
 }
 
+@media(max-height: 770px) {
+    .welcome-section .div-photo {
+        margin-top: -10rem;
+    }
+
+    .welcome-section .div-social-media {
+        margin: 2rem auto;
+        position: relative;
+    }
+    .welcome-section .div-text {
+        margin-top: 3rem;
+    }
+
+}
+
 /* Projects section */
 .projects-section {
     width: 100%;

@@ -10,7 +10,7 @@ Welcome to my portfolio! This is the official website of Manas Kumar Pradhan, an
 
 ## About
 
-Hello! I'm Manas Kumar Pradhan, a BSc 3rd-year student, currently exploring the realms of web development. Having completed HTML and CSS, I've delved into numerous projects and now embark on the fascinating world of JavaScript. My passion for technology and coding drives me, and I'm eager to share my journey and knowledge with you.
+Hello! I'm Manas Kumar Pradhan, a BSc 3rd-year student, currently exploring the realms of web development. I have mastered HTML, CSS, node.js, Express.js, MongoDB, Next.js API, and EJS. Currently, I am immersing myself in the world of React.js, eager to expand my skills and contribute to exciting projects. My passion for technology and coding drives me, and I'm enthusiastic about sharing my journey and knowledge with you.
 
 ### Social Media
 
@@ -27,17 +27,23 @@ Feel free to [download my CV](Resume_Manas_Kumar_Pradhan.pdf).
 
 Explore some of my noteworthy projects:
 
-1. **[Product Landing Page](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Product-Landing-Page/)**
-   
-2. **[City Skyline](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/City-Skyline/)**
+1. **[Product Landing Page](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Product-Landing-Page/)**</br>
+   <img src="image%20resource/Product-Landing-Page.png" alt="Product Landing Page" width="200" height="200">
 
-3. **[Magazine](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Magazine/)**
+2. **[City Skyline](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/City-Skyline/)**</br>
+   <img src="image%20resource/City-Skyline.png" alt="City Skyline" width="200" height="200">
 
-4. **[Animated Penguin](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Penguin/)**
+3. **[Magazine](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Magazine/)**</br>
+   <img src="image%20resource/Magazine.png" alt="Magazine" width="200" height="200">
 
-5. **[Tribute Page](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Tribute-Page/)**
+4. **[Animated Penguin](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Penguin/)**</br>
+   <img src="image%20resource/Penguin.png" alt="Animated Penguin" width="200" height="200">
 
-6. **[Nutrition Chart](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Nutrition-Chart/)**
+5. **[Tribute Page](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Tribute-Page/)**</br>
+   <img src="image%20resource/Tribute-Page.png" alt="Tribute Page" width="200" height="200">
+
+6. **[Nutrition Chart](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/Nutrition-Chart/)**</br>
+   <img src="image%20resource/Nutrition-Label.png" alt="Nutrition Chart" width="200" height="200">
 
 Explore all projects [here](https://pkmanas22.github.io/responsive-web-design-FreeCodeCamp/).
 

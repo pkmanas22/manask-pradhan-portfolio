@@ -230,6 +230,8 @@ img {
     width: 95%;
     margin: 1rem auto;
     color: #808dad;
+    font-style: italic;
+    text-align: justify;
 }
 
 .welcome-section .div-text .download-cv {
